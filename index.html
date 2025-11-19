@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mario</title>
+  </head>
+
+  <body>
+    <header class="nav">
+      <nav>
+        <a href="#">Temas</a>
+        <a href="#">Novidades</a>
+        <a href="#">Quem somos</a>
+      </nav>
+    </header>
+    <div class="mask-form" onclick=" mask()"></div>
+    <main class="container">
+      <section class="conteudo-principal">
+        <img src="./img/logo.png" alt="logo do Mario" class="logo" />
+
+        <article class="texto">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+            omnis optio obcaecati repudiandae corporis. Exercitationem
+            voluptates sapiente voluptatibus animi officiis?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
+            impedit numquam nostrum cumque at id optio odio enim aperiam
+            nesciunt laboriosam necessitatibus?
+          </p>
+        </article>
+
+        <button class="btn" onclick="callForm()">Entre em contato</button>
+      </section>
+
+      <aside class="imagem-lateral">
+        <img
+          src="./img/mario_luigi.png"
+          alt="Mario e Luigi"
+          class="mario-luigi"
+        />
+      </aside>
+    </main>
+
+    <section class="caixa-video">
+      <video
+        id="videoBackground"
+        src="./video/curta_promocional.mp4"
+        autoplay
+        muted
+        loop
+        class="video"
+      ></video>
+      <div class="mascara"></div>
+    </section>
+
+    <a
+      href="https://wa.me/55DDDNNNNNNNN"
+      class="link-whatsapp"
+      target="_blank"
+      rel="noopener"
+    >
+      <img src="./img/whatsapp.png" alt="link para o WhatsApp" />
+    </a>
+
+    <section class="form-contato">
+      <form>
+        <input type="text" name="nome" placeholder="Digite seu nome" required />
+        <input
+          type="tel"
+          name="fone"
+          placeholder="Digite seu telefone"
+          required
+        />
+        <textarea
+          name="problema"
+          cols="30"
+          placeholder="Deixe aqui seu problema ..."
+          required
+        ></textarea>
+        <button type="submit" class="btn btn-secundario" id="btn-form">
+          Enviar
+        </button>
+      </form>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
